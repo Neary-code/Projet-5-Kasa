@@ -1,1 +1,27 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: rgba(255, 96, 96, 1);
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+    gap: 30px;
+    list-style-type: none;
+
+}
+
+.banner-acceuil {
+    top: 163px;
+    left: 100px;
+    padding: 20px;
+    
+}
+
 
