@@ -1,7 +1,7 @@
 import logo from "../assets/images/logo-header.png";
 
 function Navbar() {
-    const menu = ['Acceuil', 'A propos'];
+    const menu = ['Accueil', 'A propos'];
 
     return (
         <div className="navbar">
@@ -10,7 +10,12 @@ function Navbar() {
             </div>
             <ul>
                 {menu.map((onglet, index) => (
-                    <li key={index}>{onglet}</li>
+                    <li 
+                        key={index} 
+                        className={onglet === 'Accueil' ? 'menu-accueil' : 'menu-apropos'}
+                    >
+                        {onglet}
+                    </li>
                 ))}
             </ul>
         </div>
@@ -18,3 +23,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

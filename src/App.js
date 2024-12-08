@@ -8,7 +8,7 @@ function App() {
     return (
         <div>
             <Navbar />
-            <Banner />
+            <Banner title="Chez vous, partout et ailleurs" />
         </div>
     );
 }

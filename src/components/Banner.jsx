@@ -1,12 +1,13 @@
-import React from 'react'
-import banner from "../assets/images/banner-acceuil.png"
+import React from 'react';
+import banner from '../assets/images/banner-accueil.png';
 
-function Banner() {
+function Banner({ title }) {
     return (
-        <div className="banner-acceuil">
-            <img src={banner} alt="Paysage montagnes" className="banner-acceuil" />
+        <div className="banner-accueil">
+            <img src={banner} alt="Paysage montagnes" className="banner-accueil" />
+            {title && <h1 className="banner-title">{title}</h1>}
         </div>
     );
 }
 
-export default Banner
+export default Banner;
