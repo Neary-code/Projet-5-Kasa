@@ -1,3 +1,8 @@
+html {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 .navbar {
     display: flex;
@@ -14,6 +19,7 @@ ul {
     font-family: Montserrat;
     gap: 30px;
     list-style-type: none;
+    cursor: pointer;
 
 }
 
@@ -57,6 +63,8 @@ ul {
 .logo-header {
     width: 210px;
     height: 68px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .menu-accueil {
