@@ -1,0 +1,29 @@
+.logo-header {
+    width: 210px;
+    height: 68px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.menu-accueil {
+    text-decoration: underline;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    font-family: Montserrat;
+    gap: 30px;
+    list-style-type: none;
+    cursor: pointer;
+
+}
