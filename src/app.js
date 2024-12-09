@@ -6,6 +6,7 @@ import Gallery from './components/Gallery.jsx';
 import Home from './pages/home.js';
 import About from './pages/about.js';
 import './app.css';
+import './styles/home.css'
 
 function App() {
     return (
