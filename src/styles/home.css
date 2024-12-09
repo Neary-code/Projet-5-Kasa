@@ -22,14 +22,18 @@ ul {
     cursor: pointer;
 }
 
-.link-about {
+.navigation ul li {
     font-size: 20px;
     color: black;
+    cursor: pointer;
+}
+
+.inactive-link {
     text-decoration: none;
 }
 
-.link-home {
-    font-size: 20px;
+.active-link {
+    text-decoration: underline;
     color: black;
 }
 

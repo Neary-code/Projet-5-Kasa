@@ -1,20 +1,20 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import Datas from "../datas/logements.json";
 
-function Gallery(props) {
+const Gallery = () => {
     return (
-        <div className='card'>
-            <img className='card-image' id={props.id} src={props.cover} alt="Logement"/>
-            <p className='card-title'>{props.title}</p>
+        <div className="gallery">
+            {Datas.map((item) => (
+                <div key={item.id} className="gallery-item">
+                    <img src={item.cover} alt={item.title} className="gallery-image" />
+                    <p className="gallery-title">{item.title}</p>
+                </div>
+            ))}
         </div>
     );
-}
-
-Gallery.propTypes = {
-    id: PropTypes.string.isRequired,
-    cover: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
 };
 
 export default Gallery;
+
+
 
