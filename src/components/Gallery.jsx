@@ -8,8 +8,9 @@ const Gallery = () => {
             {Datas.map((item) => (
                 <div key={item.id} className="gallery-item">
                     <p className="gallery-title">{item.title}</p>
-                    <Link to={`/house/${item.id}`}></Link>
+                    <Link to={`/house/${item.id}`}>
                     <img src={item.cover} alt={item.title} className="gallery-image" />
+                    </Link>
                 </div>
             ))}
         </div>
