@@ -1,24 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar.jsx';
-import Banner from './components/Banner.jsx';
-import Gallery from './components/Gallery.jsx';
-import Home from './pages/home.js';
-import About from './pages/about.js';
-import './app.css';
-import './styles/home.css'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // On garde seulement Router ici
+import Navigation from "./components/Navigation.jsx";
+import Home from "./pages/Home.jsx";
+import About from "./pages/About.jsx";
+import Error404 from "./pages/Error-404.jsx";
+import "./app.css";
+import "./styles/home.css";
 
 function App() {
     return (
-        <Router>
+        <Router> 
             <div>
-                <Navbar />
-                <Banner title="Chez vous, partout et ailleurs" />
+                <Navigation />
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route path="*" element={<Error404 />} />
                 </Routes>
-                <Gallery />
             </div>
         </Router>
     );

@@ -5,17 +5,12 @@
     cursor: pointer;
 }
 
-.menu-accueil {
-    text-decoration: underline;
-}
-
-.navbar {
+.navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
 }
 
 ul {
@@ -25,7 +20,17 @@ ul {
     gap: 30px;
     list-style-type: none;
     cursor: pointer;
+}
 
+.link-about {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.link-home {
+    font-size: 20px;
+    color: black;
 }
 
 
