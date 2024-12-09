@@ -13,8 +13,8 @@ const App = () => {
     return (
         <Router>
             <div>
-                <Navigation />
                 <div className="main-content">
+                <Navigation />
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
