@@ -88,12 +88,12 @@ ul {
     gap: 50px;
 }
 
-
 .gallery-image {
     width: 340px;
     height: 340px;
     border-radius: 10px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .gallery-title {
@@ -102,7 +102,7 @@ ul {
     color: white;
     font-size: 16px;
     font-weight: 500;
-    margin: 300px 15px 30px;
     width: 300px;
-    z-index: 5;
+    padding: 280px 20px;
+    cursor: pointer;
 }

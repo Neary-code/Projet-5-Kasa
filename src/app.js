@@ -1,9 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // On garde seulement Router ici
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./components/Navigation.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import Houses from "./pages/Houses.jsx"
+import House from "./pages/House.jsx";
 import Error404 from "./pages/Error-404.jsx";
 import "./app.css";
 import "./styles/home.css";
@@ -16,7 +16,7 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    <Route path="/houses" element={<Houses/>} />
+                    <Route path="/house" element={<House />} />
                     <Route path="*" element={<Error404 />} />
                 </Routes>
             </div>
