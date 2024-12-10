@@ -1,7 +1,10 @@
+import React from 'react';
+import BannerAbout from "../components/Banner-About.jsx";
+
 function About() {
     return (
         <div>
-            <h1>À propos de nous</h1>
+            <BannerAbout />
         </div>
     );
 }

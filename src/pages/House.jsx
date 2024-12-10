@@ -1,11 +1,12 @@
 // import React from 'react';
 // import { useParams } from 'react-router-dom';
 // import Datas from '../datas/logements.json';
-// import Modal from '../components/Modal';
-// import Tags from '../components/Tags';
-// import Error from "./pages/Error-404.jsx";
+// // import Modal from '../components/Modal';
+// // import Tags from '../components/Tags';
+// // import Error from "./pages/Error-404.jsx";
 
 // const House = () => {
+//     <h1>Welcom to House Page</h1>
 //     const { id } = useParams();
 
 //     const house = Datas.find(item => item.id === id);
@@ -14,7 +15,7 @@
 //         return <Error />
 //     }
 
-//     return (
+    // return (
 //         <div className="housePage">
 //             <Modal slides={house.pictures} />
             
@@ -51,7 +52,7 @@
 //                 </ul>
 //             </collaps>
 //         </div>
-//     );
+// );
 // };
 
 // export default House;

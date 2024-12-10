@@ -1,5 +1,5 @@
 import React from 'react';
-import Banner from "../components/Banner.jsx";
+import Banner from "../components/Banner-Home.jsx";
 import Gallery from "../components/Gallery.jsx";
 
 function Home() {
