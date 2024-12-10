@@ -1,6 +1,7 @@
 p {
     font-family: Montserrat;
     font-size: 12px;
+    
 }
 
 .banner-about {
@@ -60,6 +61,8 @@ p {
 
 
 .collapse-content.open {
+    width: 90%;
+    height: 60px;
     max-height: 200px;
     padding: 10px;
     background: rgba(246, 246, 246, 1);
