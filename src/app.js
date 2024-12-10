@@ -8,6 +8,7 @@ import House from "./pages/House.jsx";
 import Error404 from "./pages/Error-404.jsx";
 import "./app.scss";
 import "./styles/home.scss";
+import "./styles/about.scss";
 
 const App = () => {
     return (
