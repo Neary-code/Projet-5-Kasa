@@ -1,3 +1,8 @@
+p {
+    font-family: Montserrat;
+    font-size: 12px;
+}
+
 .banner-about {
     position: relative;
     width: 100%;
@@ -22,5 +27,46 @@
     width: 100%;
     height: 223px; 
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.collapse-container {
+    margin: 30px 0;
+    padding-left: 200px;
+}
+
+.collapse-button {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 60px;
+    background: rgba(255, 96, 96, 1);
+    border: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.collapse-content.open {
+    max-height: 200px;
+    padding: 10px;
+    background: rgba(246, 246, 246, 1);
+}
+
+.collapse-title {
+    font-family: Montserrat;
+    font-weight: 500;
+    color: white;
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/collapse.scss";
+import "../styles/about.scss";
 import chevronUp from "../assets/images/chevron-fermer-collapse.png";  
 import chevronDown from "../assets/images/chevron-ouvert-collapse.png"
 
