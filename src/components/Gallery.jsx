@@ -9,8 +9,15 @@ const Gallery = () => {
                 <div key={item.id} className="gallery-item">
                     <p className="gallery-title">{item.title}</p>
                     <Link to={`/house/${item.id}`}>
-                    <img src={item.cover} alt={item.title} className="gallery-image" />
-                    </Link>
+                        <img
+                            src={item.cover}
+                            alt={item.title}
+                            className="gallery-image"
+                            onClick={() => console.log("Image clicked!")}
+                        />
+</Link>
+
+
                 </div>
             ))}
         </div>

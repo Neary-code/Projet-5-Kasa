@@ -74,6 +74,12 @@ ul {
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
+.gallery-item {
+    position: relative;
+    width: 340px; /* Facultatif, pour s'assurer que tout est bien aligné */
+    height: 340px;
+}
+
 .gallery {
     width: 100%;
     display: grid;
@@ -98,14 +104,19 @@ ul {
 
 .gallery-title {
     position: absolute;
+    bottom: 10px;
+    left: 10px;
     font-family: Montserrat;
     color: white;
     font-size: 16px;
     font-weight: 500;
-    width: 300px;
-    padding: 300px 20px;
+    width: auto;
+    padding: 0; 
     cursor: pointer;
+    z-index: 2;
+    border-radius: 5px;
 }
+
 
 .footer {
     padding-left: 220px;

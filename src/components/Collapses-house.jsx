@@ -1,7 +1,7 @@
 import React from 'react';
 import Datas from "../datas/logements.json";
 
-const Infos = () => {
+const CollapsesHouse = () => {
     return (
         <div>
             
@@ -9,4 +9,4 @@ const Infos = () => {
     );
 };
 
-export default Infos;
+export default CollapsesHouse;
