@@ -1,58 +1,58 @@
-// import React from 'react';
-// import { useParams } from 'react-router-dom';
-// import Datas from '../datas/logements.json';
-// // import Modal from '../components/Modal';
-// // import Tags from '../components/Tags';
-// // import Error from "./pages/Error-404.jsx";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Datas from '../datas/logements.json';
+import Modal from '../components/Modal.jsx';
+import Tags from '../components/Infos.jsx';
+import Error404 from "../pages/Error404.jsx";
+import Collaps from '../components/Collaps-house.jsx';
 
-// const House = () => {
-//     <h1>Welcom to House Page</h1>
-//     const { id } = useParams();
+const House = () => {
+    const { id } = useParams();
 
-//     const house = Datas.find(item => item.id === id);
+    const house = Datas.find(item => item.id === id);
 
-//     if (!house) {
-//         return <Error />
-//     }
+    if (!house) {
+        return <Error404 />;
+    }
 
-    // return (
-//         <div className="housePage">
-//             <Modal slides={house.pictures} />
-            
-//             <div className="Description-container">
-//                 <h1>{house.title}</h1>
-                
-//                 <p>{house.location}</p>
-                
-//                 <Tags tags={house.tags} />
-//             </div>
+    return (
+        <div className="Modal">
+            <Modal slides={house.pictures} />
 
-//             <span className="Host-rating">
-//                 <div className="host-name">{house.host.name}</div>
-//                 <div className="avatar">
-//                     <img src={house.host.picture} alt={house.host.name} />
-//                 </div>
-//             </span>
+            <div className="Description-container">
+                <h1>{house.title}</h1>
+                <p>{house.location}</p>
+                <Tags tags={house.tags} />
+            </div>
 
-//             <div className="stars">
-//                 {Array.from({ length: house.rating }).map((_, index) => (
-//                     <span key={index} className="star">⭐</span>
-//                 ))}
-//             </div>
+            <span className="Host-rating">
+                <div className="host-name">{house.host.name}</div>
+                <div className="avatar">
+                    <img src={house.host.picture} alt={house.host.name} />
+                </div>
+            </span>
 
-//             <collaps className="collapsDescription">
-//                 <p>{house.description}</p>
-//             </collaps>
+            <div className="stars">
+                {Array.from({ length: parseInt(house.rating) }).map((_, index) => (
+                    <span key={index} className="star"></span>
+                ))}
+            </div>
 
-//             <collaps className="collapsEquipements">
-//                 <ul>
-//                     {house.equipments.map((equip, index) => (
-//                         <li key={index}>{equip}</li>
-//                     ))}
-//                 </ul>
-//             </collaps>
-//         </div>
-// );
-// };
+            <Collaps className="collapsDescription" title="Description">
+                <p>{house.description}</p>
+            </Collaps>
 
-// export default House;
+            <Collaps className="collapsEquipements" title="Equipements">
+                <ul>
+                    {house.equipments.map((equip, index) => (
+                        <li key={index}>{equip}</li>
+                    ))}
+                </ul>
+            </Collaps>
+        </div>
+    );
+};
+
+export default House;
+
+
