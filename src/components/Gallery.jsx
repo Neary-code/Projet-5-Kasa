@@ -15,9 +15,7 @@ const Gallery = () => {
                             className="gallery-image"
                             onClick={() => console.log("Image clicked!")}
                         />
-</Link>
-
-
+                </Link>
                 </div>
             ))}
         </div>

@@ -10,16 +10,23 @@ const House = () => {
     const house = Datas.find((item) => item.id === id);
 
     if (!house) {
-        return <Navigate to="/404" />;
+        return <Navigate to="*" />;
     }
 
     return (
-        <div>
-            <h1>{house.title}</h1>
+        <div className="house-page">
+            <div className="house-modal">
+                <Modal slides={house.pictures} />
+            </div>
+            <div className="house-infos">
+                <Infos house={house} />
+            </div>
+            <div className="house-collaps">
+                <Collaps house={house} />
+            </div>
         </div>
     );
 };
-
 export default House;
 
 
