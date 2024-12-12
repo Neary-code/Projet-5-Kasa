@@ -1,4 +1,7 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar as solidStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar as regularStar } from '@fortawesome/free-regular-svg-icons';
 
 const Infos = ({ title, location, tags, host, rating }) => {
     return (
@@ -17,7 +20,13 @@ const Infos = ({ title, location, tags, host, rating }) => {
                 <p className="host-name">{host.name}</p>
             </div>
             <div className="rating">
-                {"⭐".repeat(rating)} 
+                {Array.from({ length: 5 }, (_, index) => (
+                    <FontAwesomeIcon
+                        key={index}
+                        icon={index < rating ? solidStar : regularStar}
+                        className="star-icon"
+                    />
+                ))}
             </div>
         </div>
     );
