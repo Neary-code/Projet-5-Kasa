@@ -10,32 +10,31 @@ const CollapsesHouse = ({ title, description, equipements }) => {
     };
 
     return (
-        <div className={`collapse-house ${isOpen ? "open" : ""}`}>
+        <div className="collapse-house">
             <button className="collapse-house-button" onClick={toggleCollapse}>
                 {title && <h3 className="collapse-house-title">{title}</h3>}
                 <img
                     src={isOpen ? chevronUp : chevronDown}
                     alt={isOpen ? "Chevron Up" : "Chevron Down"}
-                    className="chevron-icon"
+                    className={`chevron-icon ${isOpen ? "chevron-icon-rotated" : ""}`} // Ajout de la classe rotation
                 />
             </button>
 
-            {isOpen && (
-                <div className={`collapse-house-content ${isOpen ? "content-open" : ""}`}>
-                    {description && <p className="collapse-description">{description}</p>}
+            <div className={`collapse-house-content ${isOpen ? "content-open" : ""}`}>
+                {description && <p className="collapse-description">{description}</p>}
 
-                    {equipements && (
-                        <ul className="collapse-equipements">
-                            {equipements.map((item, index) => (
-                                <li key={index}>{item}</li>
-                            ))}
-                        </ul>
-                    )}
-                </div>
-            )}
+                {equipements && (
+                    <ul className="collapse-equipements">
+                        {equipements.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                )}
+            </div>
         </div>
     );
 };
 
 export default CollapsesHouse;
+
 

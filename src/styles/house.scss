@@ -141,7 +141,7 @@
 .collapse-house-button {
     display: flex;
     justify-content: space-between;
-    width: 820px;
+    width: 620px;
     height: 60px;
     background: rgba(255, 96, 96, 1);
     border: none;
@@ -158,18 +158,30 @@
     color: white;
 }
 
+.collapse-house-button img {
+    transition: transform 0.3s ease;
+}
+
+.collapse-house-button img.chevron-icon-rotated {
+    transform: rotate(180deg);
+}
+
 .collapse-house-content {
     max-height: 0;
+    opacity: 0; 
     overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
     padding: 0;
     border-radius: 0 0 5px 5px;
 }
 
 .collapse-house-content.content-open {
-    width: 820px;
+    width: 620px;
     height: auto; 
     max-height: 200px;
+    padding: 10px;
+    background: rgba(246, 246, 246, 1);
+    opacity: 1;
     padding: 10px;
     background: rgba(246, 246, 246, 1);
 }
