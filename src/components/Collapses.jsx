@@ -17,7 +17,7 @@ const Collapse = ({ title, children }) => {
         <img
             src={isOpen ? chevronUp : chevronDown}
             alt={isOpen ? "Chevron Up" : "Chevron Down"}
-            className="chevron-icon"
+            className={`chevron-icon ${isOpen ? "chevron-icon-rotated" : ""}`}
             />
         </button>
         <div className={`collapse-content ${isOpen ? "open" : ""}`}>

@@ -16,7 +16,7 @@ const CollapsesHouse = ({ title, description, equipements }) => {
                 <img
                     src={isOpen ? chevronUp : chevronDown}
                     alt={isOpen ? "Chevron Up" : "Chevron Down"}
-                    className={`chevron-icon ${isOpen ? "chevron-icon-rotated" : ""}`} // Ajout de la classe rotation
+                    className={`chevron-icon ${isOpen ? "chevron-icon-rotated" : ""}`} 
                 />
             </button>
 
