@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import "../styles/modal.scss";
+import "../styles/house.scss";
 import Chevrond from "../assets/images/chevron-droit-modal.png";
 import Chevrong from "../assets/images/chevron-gauche-modal.png";
 
