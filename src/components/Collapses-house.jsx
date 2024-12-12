@@ -10,7 +10,7 @@ const CollapsesHouse = ({ title, description, equipements }) => {
     };
 
     return (
-        <div className="collapse-house">
+        <div className={`collapse-house ${isOpen ? "open" : ""}`}>
             <button className="collapse-house-button" onClick={toggleCollapse}>
                 {title && <h3 className="collapse-house-title">{title}</h3>}
                 <img
@@ -21,7 +21,7 @@ const CollapsesHouse = ({ title, description, equipements }) => {
             </button>
 
             {isOpen && (
-                <div className="collapse-house-content">
+                <div className={`collapse-house-content ${isOpen ? "content-open" : ""}`}>
                     {description && <p className="collapse-description">{description}</p>}
 
                     {equipements && (
@@ -38,3 +38,4 @@ const CollapsesHouse = ({ title, description, equipements }) => {
 };
 
 export default CollapsesHouse;
+
