@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Datas from "../datas/logements.json";
 import "../styles/modal.scss";
 import Chevrond from "../assets/images/chevron-droit-modal.png";
 import Chevrong from "../assets/images/chevron-gauche-modal.png";
@@ -9,13 +8,13 @@ const Modal = ({ slides }) => {
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
-        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;  // Vérification de la déclaration
+        const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
         setCurrentIndex(newIndex);
     };
 
     const goToNext = () => {
-        const isLastSlide = currentIndex === slides.length - 1;  // Vérification de la déclaration
-        const newIndex = isLastSlide ? 0 : currentIndex + 1;  // Vérification de la déclaration
+        const isLastSlide = currentIndex === slides.length - 1;
+        const newIndex = isLastSlide ? 0 : currentIndex + 1;
         setCurrentIndex(newIndex);
     };
 
@@ -38,6 +37,9 @@ const Modal = ({ slides }) => {
                 onClick={goToNext} 
                 className="chevron-right"
             />
+            <div className="slide-counter">
+                {currentIndex + 1} / {slides.length}
+            </div>
         </div>
     );
 };
