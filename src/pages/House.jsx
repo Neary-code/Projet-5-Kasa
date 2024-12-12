@@ -1,7 +1,7 @@
 import React from "react";
 import Modal from "../components/Modal.jsx";
 import Infos from "../components/Infos.jsx";
-import Collaps from "../components/Collapses-house.jsx";
+import CollapsesHouse  from "../components/Collapses-house.jsx";
 import { useParams, Navigate } from "react-router-dom";
 import Datas from "../datas/logements.json";
 
@@ -28,15 +28,20 @@ const House = () => {
                     rating={house.rating}
                 />
             </div>
-            
+
             <div className="house-collaps">
-                <Collaps house={house} />
+                <CollapsesHouse
+                    title="Description"
+                    description={house.description}
+                    />
+
+                    <CollapsesHouse
+                    title="Équipements"
+                    equipements={house.equipments} 
+                    />
             </div>
         </div>
     );
 };
 
 export default House;
-
-
-
