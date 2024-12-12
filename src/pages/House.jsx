@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import Modal from "../components/Modal.jsx";
 import Infos from "../components/Infos.jsx";
 import Collaps from "../components/Collapses-house.jsx";
@@ -18,15 +18,25 @@ const House = () => {
             <div className="house-modal">
                 <Modal slides={house.pictures} />
             </div>
+            
             <div className="house-infos">
-                <Infos house={house} />
+                <Infos 
+                    title={house.title}
+                    location={house.location}
+                    tags={house.tags}
+                    host={house.host}
+                    rating={house.rating}
+                />
             </div>
+            
             <div className="house-collaps">
                 <Collaps house={house} />
             </div>
         </div>
     );
 };
+
 export default House;
+
 
 
