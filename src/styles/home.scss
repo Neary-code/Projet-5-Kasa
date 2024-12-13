@@ -17,30 +17,41 @@ $breakpoint-xxxl: 1920px;
 
 .logo-header {
     width: 210px;
-    height: 68px;
+    height: 68px; // Ratio: 210 / 68 ≈ 3.088
     margin-bottom: 20px;
     cursor: pointer;
+
+    @media (max-width: 1024px) {
+        width: 180px;
+        height: 58px; // Proportionnel à la largeur
+    }
+
     @media (max-width: 768px) {
+        width: 140px;
+        height: 45px;
+    }
+
+    @media (max-width: 576px) {
         width: 120px;
-        height: 44px;
+        height: 39px;
     }
-    @media (max-width: 500px){
+
+    @media (max-width: 480px) {
         width: 100px;
-        height: 40px;
+        height: 32px;
     }
-    @media (max-width: 480px){
+
+    @media (max-width: 400px) {
         width: 80px;
-        height: 30px;
+        height: 26px;
     }
-    @media (max-width: 347px){
-        width: 70px;
-        height: 40px;
-    }
-    @media (max-width: 320px){
-        width: 50px;
-        height: 20px;
+
+    @media (max-width: 360px) {
+        width: 60px;
+        height: 19px;
     }
 }
+
 
 .navigation {
     display: flex;
@@ -208,10 +219,6 @@ $breakpoint-xxxl: 1920px;
             height: 280px;
         }
         @media (max-width: 1024px) {
-            width: 200px; 
-            height: 200px;
-        }
-        @media (max-width: 600px) {
             width: 180px; 
             height: 180px;
         }
@@ -239,10 +246,6 @@ $breakpoint-xxxl: 1920px;
                 height: 280px;
             }
             @media (max-width: 1024px) {
-                width: 200px; 
-                height: 200px;
-            }
-            @media (max-width: 600px) {
                 width: 180px; 
                 height: 180px;
             }
@@ -267,11 +270,43 @@ $breakpoint-xxxl: 1920px;
             cursor: pointer;
             z-index: 2;
             border-radius: 5px;
+            @media (max-width: 1024px) {
+                font-size: 14px;
+            }
+            @media (max-width: 347px) {
+                font-size: 10px;
+            }
+            @media (max-width: 320px) {
+                font-size: 8px;
+            }
         }
     }
 }
 
 .footer {
-    padding-left: 220px;
     background: $primary-color;
+    display: flex;
+    flex-direction: column;
+    height: 209px;
+    padding: 50px 0;
+    place-items: center;
+    width: 100%;
+.logo-footer {
+    margin-bottom: 20px;
+    @media (max-width: 347px) {
+        width: 40%; 
+        height: 39px;
+        font-size: 10px;
+    }
 }
+.text-footer {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    @media (max-width: 347px) {
+        font-size: 10px;
+    }
+}
+}
+
