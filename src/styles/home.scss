@@ -6,11 +6,32 @@ $box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 $banner-overlay: rgba(0, 0, 0, 0.5);
 $gallery-bg: rgba(246, 246, 246, 1);
 
+// Variables des breakpoints
+$breakpoint-xs: 320px;
+$breakpoint-sm: 480px; 
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px; 
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1440px;
+$breakpoint-xxxl: 1920px;
+
 .logo-header {
     width: 210px;
     height: 68px;
     margin-bottom: 20px;
     cursor: pointer;
+    @media (max-width: 768px) {
+        width: 120px;
+        height: 44px;
+    }
+    @media (max-width: 480px){
+        width: 80px;
+        height: 30px;
+    }
+    @media (max-width: 320px){
+        width: 50px;
+        height: 20px;
+    }
 }
 
 .navigation {
@@ -19,6 +40,16 @@ $gallery-bg: rgba(246, 246, 246, 1);
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    @media (max-width: 768px) {
+        gap: 26px;
+        padding: 15px;
+    }
+    @media (max-width: 480px){
+        gap:16px;
+        padding: 10px;
+    }
+}
+
 
     ul {
         display: flex;
@@ -27,14 +58,22 @@ $gallery-bg: rgba(246, 246, 246, 1);
         gap: 30px;
         list-style-type: none;
         cursor: pointer;
-
+        @media (max-width: 480px){
+            gap: 15px;
+        }
         li {
             font-size: 20px;
             color: $primary-color;
             cursor: pointer;
+            @media (max-width: 768px) {
+                font-size: 15px;
+            }
+            @media (max-width: 480px){
+                font-size: 10px;
+            }
         }
     }
-}
+
 
 .inactive-link {
     text-decoration: none;
@@ -55,6 +94,10 @@ $gallery-bg: rgba(246, 246, 246, 1);
     justify-content: center;
     align-items: center;
     box-shadow: $box-shadow;
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 111px;
+    }
 
     img {
         width: 100%;
@@ -81,6 +124,15 @@ $gallery-bg: rgba(246, 246, 246, 1);
                     1px -1px 0 $primary-color, 
                     -1px 1px 0 $primary-color, 
                     1px 1px 0 $primary-color;
+                    @media (max-width: 768px) {
+                        font-size: 30px;
+                    }
+                    @media (max-width: 480px){
+                        font-size: 20px;
+                    }
+                    @media (max-width: 420px){
+                        font-size: 16px;
+                    }
     }
 }
 
@@ -126,13 +178,4 @@ $gallery-bg: rgba(246, 246, 246, 1);
 .footer {
     padding-left: 220px;
     background: $primary-color;
-}
-
-
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 768px) {
-
-
 }
