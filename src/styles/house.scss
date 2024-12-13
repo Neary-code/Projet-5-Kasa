@@ -1,205 +1,201 @@
 .chevron-left,
 .chevron-right {
-    position: absolute;
-    top: 50%; 
-    transform: translateY(-50%); 
-    cursor: pointer;
-    z-index: 10;
-}
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 10;
 
-.chevron-left {
+  &.chevron-left {
     left: 20px;
-}
+  }
 
-.chevron-right {
+  &.chevron-right {
     right: 20px;
+  }
 }
 
 .house-modal {
-    position: relative;
-    width: 100%;
-    height: 415px;
-    border-radius: 25px;
-}
+  position: relative;
+  width: 100%;
+  height: 415px;
+  border-radius: 25px;
 
-.modal {
+  .modal {
     width: 100%;
     height: 100%;
     position: relative;
-}
 
-.modal-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    object-fit: cover;
+    .modal-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      object-fit: cover;
+    }
+  }
 }
 
 .slide-counter {
-    position: relative;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-family: Montserrat;
-    font-size: 20px;
-    padding-top: 370px;
+  position: relative;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  padding-top: 370px;
 }
 
 .house-infos {
-    max-width: 1800px;
+  max-width: 1800px;
 
-}
-
-.infos {
+  .infos {
     align-items: center;
     display: flex;
     justify-content: space-between;
     max-width: 1800px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     gap: 100px;
-}
 
-.infos-tags {
-    display: flex;
-    flex-direction: column;
-}
+    .infos-tags {
+      display: flex;
+      flex-direction: column;
+    }
 
-.info-title {
-    font-family: Montserrat;
-    font-size: 36px;
-    color: rgba(255, 96, 96, 1);
-}
+    .info-title {
+      font-family: Montserrat;
+      font-size: 36px;
+      color: rgba(255, 96, 96, 1);
+    }
 
-.tags {
-    display: flex;
-    gap: 10px;
-}
+    .tags {
+      display: flex;
+      gap: 10px;
 
-.tag {
-    margin-top: 20px;
-    font-family: Montserrat;
-    font-size: 12px;
-    color: white;
-    background: rgba(255, 96, 96, 1);
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+      .tag {
+        margin-top: 20px;
+        font-family: Montserrat;
+        font-size: 12px;
+        color: white;
+        background: rgba(255, 96, 96, 1);
+        width: 115px;
+        height: 25px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }
 
 .host {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-}
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
 
-.host-name {
+  .host-name {
     color: #ff6060;
     font-size: 18px;
     margin-right: 15px;
     text-align: end;
     margin-top: 10px;
-}
+  }
 
-.host-rating {
+  .host-rating {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
+  }
 
-.host-picture {
+  .host-picture {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 64px;
     border-radius: 50px;
     object-fit: cover;
+  }
 }
 
 .rating {
-    display: flex;
-    gap: 7px;
-    font-size: 20px;
-    justify-self: right;
-    margin-top: 15px;
-    color: rgba(255, 96, 96, 1);
+  display: flex;
+  gap: 7px;
+  font-size: 20px;
+  justify-self: right;
+  margin-top: 15px;
+  color: rgba(255, 96, 96, 1);
 }
 
 .house-collaps {
-    display: flex;
-    justify-content: space-between;
-}
+  display: flex;
+  justify-content: space-between;
 
-.collapse-house {
+  .collapse-house {
     margin: 30px 0;
-}
 
-.collapse-house-button {
-    display: flex;
-    justify-content: space-between;
-    width: 620px;
-    height: 60px;
-    background: rgba(255, 96, 96, 1);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    align-items: center;
-}
+    .collapse-house-button {
+      display: flex;
+      justify-content: space-between;
+      width: 620px;
+      height: 60px;
+      background: rgba(255, 96, 96, 1);
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+      align-items: center;
 
-.collapse-house-title {
-    font-family: Montserrat;
-    font-weight: 500;
-    color: white;
-}
+      .collapse-house-title {
+        font-family: Montserrat;
+        font-weight: 500;
+        color: white;
+      }
 
-.collapse-house-button img {
-    transition: transform 0.3s ease;
-}
+      img {
+        transition: transform 0.3s ease;
 
-.collapse-house-button img.chevron-icon-rotated {
-    transform: rotate(180deg);
-}
+        &.chevron-icon-rotated {
+          transform: rotate(180deg);
+        }
+      }
+    }
 
-.collapse-house-content {
-    max-height: 0;
-    opacity: 0; 
-    overflow: hidden;
-    transition: max-height 0.3s ease, opacity 0.3s ease;
-    padding: 0;
-    border-radius: 0 0 5px 5px;
-}
+    .collapse-house-content {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      padding: 0;
+      border-radius: 0 0 5px 5px;
 
-.collapse-house-content.content-open {
-    width: 620px;
-    height: auto; 
-    max-height: 200px;
-    padding: 10px;
-    background: rgba(246, 246, 246, 1);
-    opacity: 1;
-    padding: 10px;
-    background: rgba(246, 246, 246, 1);
+      &.content-open {
+        width: 620px;
+        height: auto;
+        max-height: 200px;
+        padding: 10px;
+        background: rgba(246, 246, 246, 1);
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .collapse-equipements {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .collapse-description {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
 }

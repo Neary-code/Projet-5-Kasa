@@ -6,7 +6,7 @@ import Error404 from "./pages/Error404.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import House from "./pages/House.jsx";
-import "./app.scss";
+import "./styles/app.scss";
 import "./styles/home.scss";
 import "./styles/about.scss";
 

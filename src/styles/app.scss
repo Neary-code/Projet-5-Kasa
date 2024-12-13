@@ -1,0 +1,21 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../assets/font/Montserrat-Medium.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.main-content {
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
