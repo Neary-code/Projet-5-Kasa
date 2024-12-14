@@ -9,7 +9,6 @@
     color: white;
     z-index: 10;
   }
-
   .chevron-left {
     left: 10px;
     font-size: 20px;
@@ -20,7 +19,6 @@
     font-size: 8px;
   }
   }
-
   .chevron-right {
     right: 10px;
     font-size: 20px;
@@ -44,12 +42,10 @@
   width: 100%;
   height: 150px;
 }
-
   .modal {
     width: 100%;
     height: 100%;
     position: relative;
-
     .modal-image {
       position: absolute;
       width: 100%;
@@ -59,7 +55,6 @@
     }
   }
 }
-
 .slide-counter {
   position: relative;
   color: white;
@@ -68,11 +63,17 @@
   font-family: Montserrat;
   font-size: 20px;
   padding-top: 370px;
+  @media (max-width: 500px) {
+    padding-top: 230px;
+    font-size: 16px;
+  }
+  @media (max-width: 360px) {
+    padding-top: 130px;
+    font-size: 8px;
+  }
 }
-
 .house-infos {
   max-width: 1800px;
-
   .infos {
     align-items: center;
     display: flex;
@@ -80,22 +81,29 @@
     max-width: 1800px;
     padding: 20px 0;
     gap: 100px;
-
+    @media (max-width: 768px) {
+      gap: 0;
+      @media (max-width: 500px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
     .infos-tags {
       display: flex;
       flex-direction: column;
     }
-
     .info-title {
       font-family: Montserrat;
       font-size: 36px;
       color: rgba(255, 96, 96, 1);
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
     }
-
     .tags {
       display: flex;
       gap: 10px;
-
       .tag {
         margin-top: 20px;
         font-family: Montserrat;
@@ -112,51 +120,88 @@
     }
   }
 }
-
-.host {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
-
-  .host-name {
-    color: #ff6060;
-    font-size: 18px;
-    margin-right: 15px;
-    text-align: end;
-    margin-top: 10px;
-  }
-
   .host-rating {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    align-items: flex-end;
+    @media (max-width: 500px) {
+      flex-direction: row-reverse;
+      gap: 120px;
+      padding-top: 20px;
+      align-items: flex-start;
+    }
+    @media (max-width: 480px) {
+      gap: 80px;
+    }
+    @media (max-width: 400px) {
+      gap: 5px;
+    }
   }
-
-  .host-picture {
+  .host {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    width: 64px;
-    border-radius: 50px;
-    object-fit: cover;
+    align-items: center;
+    gap: 20px;
+    flex-direction: row-reverse;
+    .host-picture {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      @media (max-width: 768px) {
+        width: 54px;
+        height: 54px;
+      }
+      @media (max-width: 320px) {
+        width: 44px;
+        height: 44px;
+      }
+    }
+    .host-name {
+      font-size: 18px;
+      color: #ff6060;
+      text-align: left;
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
+      @media (max-width: 400px) {
+        font-size: 12px;
+      }
+      @media (max-width: 320px) {
+        font-size: 10px;
+      }
+    }
   }
-}
-
-.rating {
-  display: flex;
-  gap: 7px;
-  font-size: 20px;
-  justify-self: right;
-  margin-top: 15px;
-  color: rgba(255, 96, 96, 1);
-}
-
+  .rating {
+    display: flex;
+    gap: 8px;
+    color: rgba(255, 96, 96, 1);
+    padding-top: 20px;
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+    @media (max-width: 320px) {
+      font-size: 10px;
+      gap: 4px;
+    }
+  }
+  
 .house-collaps {
   display: flex;
   justify-content: space-between;
-
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+  }
   .collapse-house {
     margin: 30px 0;
+    @media (max-width: 600px) {
+      margin: 15px 0;
+      
+    }
 
     .collapse-house-button {
       display: flex;
@@ -170,6 +215,20 @@
       font-size: 16px;
       border-radius: 5px;
       align-items: center;
+      @media (max-width: 1440px) {
+        width: 420px;
+      }
+      @media (max-width: 1024px) {
+        width: 320px;
+      }
+      @media (max-width: 768px) {
+        width: 220px;
+        height: 30px;
+      }
+      @media (max-width: 600px) {
+        width: 100%;
+        height: 30px;
+      }
 
       .collapse-house-title {
         font-family: Montserrat;
@@ -201,6 +260,20 @@
         padding: 10px;
         background: rgba(246, 246, 246, 1);
         opacity: 1;
+        @media (max-width: 1440px) {
+          width: 420px;
+        }
+        @media (max-width: 1024px) {
+          width: 320px;
+        }
+        @media (max-width: 768px) {
+          width: 220px;
+          height: 30px;
+        }
+        @media (max-width: 600px) {
+          width: 100%;
+          height: 30px;
+        }
       }
     }
   }
@@ -213,7 +286,6 @@
   padding: 0;
   margin: 0;
   font-size: 14px;
-  line-height: 1.5;
 }
 
 .collapse-description {
@@ -222,4 +294,10 @@
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media (max-width: 600px) {
+    font-size: 8px;
+  }
 }
