@@ -9,12 +9,28 @@
   font-weight: 700;
   line-height: 410px;
   color: #ff6b6b;
+  @media (max-width: 768px) {
+    font-size: 200px;
+}
+@media (max-width: 500px) {
+  font-size: 150px;
+}
+@media (max-width: 400px) {
+  font-size: 100px;
+}
 }
 
 .not-found-text {
   font-size: 25px;
   padding-bottom: 50px;
   color: #ff6b6b;
+  @media (max-width: 768px) {
+    font-size: 18px;
+}
+@media (max-width: 500px) {
+  font-size: 14px;
+  padding-bottom: 25px;
+}
 }
 
 .not-found-link {
