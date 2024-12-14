@@ -1,25 +1,49 @@
 .chevron-left,
-.chevron-right {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  z-index: 10;
-
-  &.chevron-left {
-    left: 20px;
+  .chevron-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    z-index: 10;
   }
 
-  &.chevron-right {
-    right: 20px;
+  .chevron-left {
+    left: 10px;
+    font-size: 20px;
+    @media (max-width: 500px) {
+      font-size: 15px;
   }
-}
+  @media (max-width: 360px) {
+    font-size: 8px;
+  }
+  }
 
+  .chevron-right {
+    right: 10px;
+    font-size: 20px;
+    @media (max-width: 500px) {
+      font-size: 15px;
+  }
+  @media (max-width: 360px) {
+    font-size: 8px;
+  }
+  }
 .house-modal {
   position: relative;
   width: 100%;
   height: 415px;
   border-radius: 25px;
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 255px;
+}
+@media (max-width: 360px) {
+  width: 100%;
+  height: 150px;
+}
 
   .modal {
     width: 100%;
