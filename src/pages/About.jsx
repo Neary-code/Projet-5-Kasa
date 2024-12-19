@@ -1,14 +1,16 @@
-import React from 'react';
+import React from "react";
 import BannerAbout from "../components/Banner-About.jsx";
 import Collapse from "../components/Collapses.jsx";
+import "../styles/collapses.scss";
+
 
 function About() {
     return (
         <div>
             <BannerAbout />
-            <div className='Collapses'>
+            <div className="collapses">
                 <Collapse title="Fiabilité">
-                    <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes</p>
+                    <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
                 </Collapse>
                 <Collapse title="Respect">
                     <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
@@ -25,5 +27,6 @@ function About() {
 }
 
 export default About;
+
 
 

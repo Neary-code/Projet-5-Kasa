@@ -1,9 +1,10 @@
 import React from "react";
 import Modal from "../components/Modal.jsx";
 import Infos from "../components/Infos.jsx";
-import CollapsesHouse  from "../components/Collapses-house.jsx";
+import Collapse from "../components/Collapses.jsx";
 import { useParams, Navigate } from "react-router-dom";
 import Datas from "../datas/logements.json";
+import "../styles/collapses.scss";
 
 const House = () => {
     const { id } = useParams();
@@ -29,16 +30,18 @@ const House = () => {
                 />
             </div>
 
-            <div className="house-collaps">
-                <CollapsesHouse
-                    title="Description"
-                    description={house.description}
-                    />
+            <div className="house-collapses">
+                <Collapse title="Description">
+                    <p>{house.description}</p>
+                </Collapse>
 
-                    <CollapsesHouse
-                    title="Équipements"
-                    equipements={house.equipments} 
-                    />
+                <Collapse title="Équipements">
+                    <ul>
+                        {house.equipments.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                    </ul>
+                </Collapse>
             </div>
         </div>
     );
