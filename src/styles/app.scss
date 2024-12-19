@@ -1,6 +1,6 @@
 @font-face {
-            font-family: Montserrat;
-            src: url(../assets/font/Montserrat-Medium.ttf);
+  font-family: Montserrat;
+  src: url(../assets/font/Montserrat-Medium.ttf);
 }
 
 * {
@@ -13,15 +13,15 @@
 }
 
 html, body {
-              width: 100%;
-              height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .main-content {
-                margin-top: 50px;
-                margin-left: 70px;
-                margin-right: 70px;
-                  @media (max-width: 500px) {
-                      margin-top: 20px;
-                  }
+  margin-top: 50px;
+  margin-left: 70px;
+  margin-right: 70px;
+    @media (max-width: 500px) {
+      margin-top: 20px;
+    }
 }
