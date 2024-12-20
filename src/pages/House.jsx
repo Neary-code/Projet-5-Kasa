@@ -36,7 +36,7 @@ const House = () => {
                 </Collapse>
 
                 <Collapse title="Équipements">
-                    <ul>
+                    <ul className="ul-collapses">
                         {house.equipments.map((item, index) => (
                             <li key={index}>{item}</li>
                         ))}

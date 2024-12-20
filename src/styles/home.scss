@@ -90,12 +90,13 @@ $gallery-bg: rgba(246, 246, 246, 1);
 
     .inactive-link {
         text-decoration: none;
-        color: black;
+        color: $primary-color;
     }
 
     .active-link {
         text-decoration: underline;
         color: $primary-color;
+        
     }
 
     .banner-accueil {
