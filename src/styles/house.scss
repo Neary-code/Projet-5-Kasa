@@ -1,204 +1,204 @@
-.chevron-left,
-    .chevron-right {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        color: white;
-        z-index: 10;
-    }
-
-.chevron-left {
-    left: 10px;
-    font-size: 20px;
-        @media (max-width: 500px) {
-            font-size: 15px;
-                @media (max-width: 360px) {
-                    font-size: 8px;
-                }
-        }
-    }
-
-.chevron-right {
-    right: 10px;
-    font-size: 20px;
-        @media (max-width: 500px) {
-            font-size: 15px;
-                @media (max-width: 360px) {
-                    font-size: 8px;
-                }
-        }
-    }
-
-.house-modal {
-    position: relative;
-    width: 100%;
-    height: 415px;
-    border-radius: 25px;
-        @media (max-width: 500px) {
-            width: 100%;
-            height: 255px;
-                @media (max-width: 360px) {
-                    width: 100%;
-                    height: 150px;
-                }
-        }
-    }
-
-.modal {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    }
-
-.modal-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 25px;
-    object-fit: cover;
-    }
-
-.slide-counter {
-    position: relative;
-    color: white;
-    display: flex;
-    justify-content: center;
-    font-family: Montserrat;
-    font-size: 20px;
-    padding-top: 370px;
-        @media (max-width: 500px) {
-            padding-top: 230px;
-            font-size: 16px;
-                @media (max-width: 360px) {
-                    padding-top: 130px;
-                    font-size: 8px;
-                }
-        }
-    }
-
-.house-infos {
-    max-width: 1800px;
-        .infos {
-            align-items: center;
-            display: flex;
-            justify-content: space-between;
-            max-width: 1800px;
-            padding: 20px 0;
-            gap: 100px;
-                @media (max-width: 768px) {
-                    gap: 0;
-                        @media (max-width: 500px) {
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                        }
-                }
-        }
-    }
-
-
-.infos-tags {
-    display: flex;
-    flex-direction: column;
-        .info-title {
-            font-family: Montserrat;
-            font-size: 36px;
-            color: rgba(255, 96, 96, 1);
-                @media (max-width: 768px) {
-                    font-size: 20px;
-                }
-          }
-    }
-
-.tags {
-    display: flex;
-    gap: 10px;
-        .tag {
-            margin-top: 20px;
-            font-family: Montserrat;
-            font-size: 12px;
+    .chevron-left,
+        .chevron-right {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: transparent;
+            border: none;
+            cursor: pointer;
             color: white;
-            background: rgba(255, 96, 96, 1);
-            width: 115px;
-            height: 25px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        } 
+            z-index: 10;
     }
 
-  .host-rating {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-        @media (max-width: 500px) {
-            flex-direction: row-reverse;
-            gap: 120px;
-            padding-top: 20px;
-            align-items: flex-start;
-                @media (max-width: 480px) {
-                    gap: 80px;
-                        @media (max-width: 400px) {
-                            gap: 5px;
-                        }
-                  }
-          }
+    .chevron-left {
+        left: 10px;
+        font-size: 20px;
+            @media (max-width: 500px) {
+                font-size: 15px;
+                    @media (max-width: 360px) {
+                        font-size: 8px;
+                    }
+            }
     }
 
-.host {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-direction: row-reverse;
-        .host-picture {
-            width: 64px;
-            height: 64px;
-            border-radius: 50%;
-            object-fit: cover;
-                @media (max-width: 768px) {
-                    width: 54px;
-                    height: 54px;
-                        @media (max-width: 320px) {
-                            width: 44px;
-                            height: 44px;
-                        }
-                }
-          }
+    .chevron-right {
+        right: 10px;
+        font-size: 20px;
+            @media (max-width: 500px) {
+                font-size: 15px;
+                    @media (max-width: 360px) {
+                        font-size: 8px;
+                    }
+            }
     }
 
-.host-name {
-    font-size: 18px;
-    color: #ff6060;
-    text-align: left;
-        @media (max-width: 768px) {
-            font-size: 14px;
-                @media (max-width: 400px) {
-                    font-size: 12px;
-                        @media (max-width: 320px) {
-                            font-size: 10px;
-                        }
-                  }
-        }
+    .house-modal {
+        position: relative;
+        width: 100%;
+        height: 415px;
+        border-radius: 25px;
+            @media (max-width: 500px) {
+                width: 100%;
+                height: 255px;
+                    @media (max-width: 360px) {
+                        width: 100%;
+                        height: 150px;
+                    }
+            }
+    }
+
+    .modal {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .modal-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+
+    .slide-counter {
+        position: relative;
+        color: white;
+        display: flex;
+        justify-content: center;
+        font-family: Montserrat;
+        font-size: 20px;
+        padding-top: 370px;
+            @media (max-width: 500px) {
+                padding-top: 230px;
+                font-size: 16px;
+                    @media (max-width: 360px) {
+                        padding-top: 130px;
+                        font-size: 8px;
+                    }
+            }
+    }
+
+    .house-infos {
+        max-width: 1800px;
+            .infos {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+                max-width: 1800px;
+                padding: 20px 0;
+                gap: 100px;
+                    @media (max-width: 768px) {
+                        gap: 0;
+                            @media (max-width: 500px) {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                            }
+                    }
+            }
+    }
+
+
+    .infos-tags {
+        display: flex;
+        flex-direction: column;
+            .info-title {
+                font-family: Montserrat;
+                font-size: 36px;
+                color: rgba(255, 96, 96, 1);
+                    @media (max-width: 768px) {
+                        font-size: 20px;
+                    }
+            }
+    }
+
+    .tags {
+        display: flex;
+        gap: 10px;
+            .tag {
+                margin-top: 20px;
+                font-family: Montserrat;
+                font-size: 12px;
+                color: white;
+                background: rgba(255, 96, 96, 1);
+                width: 115px;
+                height: 25px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            } 
+    }   
+
+    .host-rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+            @media (max-width: 500px) {
+                flex-direction: row-reverse;
+                gap: 120px;
+                padding-top: 20px;
+                align-items: flex-start;
+                    @media (max-width: 480px) {
+                        gap: 80px;
+                            @media (max-width: 400px) {
+                                gap: 5px;
+                            }
+                    }
+            }
+    }
+
+    .host {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: row-reverse;
+            .host-picture {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                object-fit: cover;
+                    @media (max-width: 768px) {
+                        width: 54px;
+                        height: 54px;
+                            @media (max-width: 320px) {
+                                width: 44px;
+                                height: 44px;
+                            }   
+                    }
+            }
+    }
+
+    .host-name {
+        font-size: 18px;
+        color: #ff6060;
+        text-align: left;
+            @media (max-width: 768px) {
+                font-size: 14px;
+                    @media (max-width: 400px) {
+                        font-size: 12px;
+                            @media (max-width: 320px) {
+                                font-size: 10px;
+                            }
+                    }
+            }
     }
   
-.rating {
-    display: flex;
-    gap: 8px;
-    color: rgba(255, 96, 96, 1);
-    padding-top: 20px;
-        @media (max-width: 768px) {
-            font-size: 14px;
-                @media (max-width: 400px) {
-                    font-size: 12px;
-                        @media (max-width: 320px) {
-                            font-size: 10px;
-                            gap: 4px;
-                        }
-                  }
-        }
+    .rating {
+        display: flex;
+        gap: 8px;
+        color: rgba(255, 96, 96, 1);
+        padding-top: 20px;
+            @media (max-width: 768px) {
+                font-size: 14px;
+                    @media (max-width: 400px) {
+                        font-size: 12px;
+                            @media (max-width: 320px) {
+                                font-size: 10px;
+                                gap: 4px;
+                            }
+                    }
+            }
     }

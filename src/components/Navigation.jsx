@@ -10,7 +10,7 @@ const Navigation = () => {
                     <img src={logo} alt="Logo Kasa" className="logo-header" />
                 </a>
             </div>
-            <ul>
+            <ul className='ul-nav'>
                 <NavLink to="/" className={({ isActive }) => (isActive ? "active-link" : "inactive-link")}>
                     <li>Accueil</li>
                 </NavLink>
